@@ -44,6 +44,7 @@ process.on('newPRs', async(pullRequest) => {
 ```
 ### . ✎ Support and contact
 For support or queries, Contact me on Discord, tag : `Astrexx.jar#4035`
+
 ![](https://discord.c99.nl/widget/theme-3/848724317416325160.png) 
 *** 
 
