@@ -17,7 +17,7 @@ October is here ! Stand for a chance to win merch from [Hacktoberfest](https://h
 
 ## . ✎ Contributions to this repo
 
- I will merge any valid pull request made in this repository, even if it's a minor(even a hello world works) one :)\
+ I will merge any valid pull request made in this repository, even if it's a minor one(even a hello world works) :)\
 Rules & tips:
 - No copied/stolen codes.
 - Post codes in their respective language directories/folders.
