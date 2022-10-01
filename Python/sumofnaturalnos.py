@@ -11,3 +11,10 @@ def sumofnaturalno(num):
 
 n = int(input("Enter the number to find the sum of all number till there. "))
 sumofnaturalno(n)
+
+# or Another Method of this problem can be :-
+
+def findSum(num) :
+    return num * (num + 1) / 2
+n = int(input())
+print findSum(n)
