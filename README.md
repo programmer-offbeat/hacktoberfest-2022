@@ -3,8 +3,9 @@
 
 
 
-<img align="center" src= "https://external-preview.redd.it/d_6uprRJpBPS9-1ExJsjCWbbrQrHg8V1DxvTmCsSpH0.jpg?width=640&crop=smart&auto=webp&s=c86d4993194a52f9b1e39ccd6a929d532f380bf7" width= "400"/>
-
+<div align="center">
+<img src= "https://external-preview.redd.it/d_6uprRJpBPS9-1ExJsjCWbbrQrHg8V1DxvTmCsSpH0.jpg?width=640&crop=smart&auto=webp&s=c86d4993194a52f9b1e39ccd6a929d532f380bf7" width= "400"/>
+</div>
 <br> <br>
 
 [![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v1/open-source.svg)](https://github.com/MrKrishnaAgarwal/Hacktoberfest2022)
