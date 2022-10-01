@@ -60,7 +60,7 @@ process.on('newPRs', async(pullRequest) => {
    if(contributions >= 4) console.log("CONGRATULATIONS🎉 ! YOU HAVE COMPLETED YOUR GOAL !\nHead over to your profile to claim your rewards !");
 })
 ```
-### Our valuable Contributors👩‍💻👨‍💻 
+### Our COOL Contributors 👩‍💻 
 
 <a href="https://github.com/programmer-offbeat/hacktoberfest-2022/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=programmer-offbeat/hacktoberfest-2022" />
