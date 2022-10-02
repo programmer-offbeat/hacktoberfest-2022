@@ -24,10 +24,10 @@ October is here ! Stand for a chance to win merch from [Hacktoberfest](https://h
 ︰・Search GitHub for open-source repositories with the tag `hacktoberfest`, and create Pull requests.\
 ︰・You can contribute anything as long as it complies with the [Guidelines](https://hacktoberfest.com/participation/#pr-mr-details).\
 ︰・If your PR gets merged, Hacktoberfest staff will analyse it, and upon a successful and valid merge, it will be counted as 1 contribution in your [profile](https://hacktoberfest.com/profile/).\
-╰︰Create 4 successful PRs and earn a merch from Hacktoberfest !!!!
+╰︰Create 4 successful PRs and earn a merch from Hacktoberfest !!!!\
 
 ```bash
- 
+  
 ```
 
 ## . ✎ Contributions to this repo
