@@ -14,9 +14,6 @@
 <a href="https://github.com/programmer-offbeat/hacktoberfest-2022" ><img src="https://img.shields.io/badge/Contributions-welcome-green.svg?style=flat&logo=github" alt="Contributions" /></a>
 <a href="https://github.com/programmer-offbeat/hacktoberfest-2022/pulls"><img src="https://img.shields.io/github/issues-pr/programmer-offbeat/hacktoberfest-2022" alt="Pull Requests Badge"/></a>
 
-<h4> You can make folders of programming languages and also you can contribute in the repo's below.</h4>
-
-<h4> Feel free to contribute to this repo by creating and editing little programs in any programming language and make different folders for the code you want to contribute. </h4>
 
 October is here ! Stand for a chance to win merch from [Hacktoberfest](https://hacktoberfest.com) by making PRs to this repository!
 
@@ -42,6 +39,8 @@ Rules & tips:
 - You can create PRs to this readme too, to make it better.
 - Better codes = better chances of being selected.
 - No spammy Pull Requests.
+- You can make folders of programming languages if you don't find yours.
+- Feel free to open an issue or PR if you want to edit other's codes.
 
 
 ```javascript
