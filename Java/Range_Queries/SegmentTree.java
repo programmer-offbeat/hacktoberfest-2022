@@ -87,3 +87,69 @@ class SegmentTree {
     System.out.println(tree.getSum(n, 1, 3));
   }
 }
+
+class LazySegmentTree {
+
+  final int MAX = 1000;
+  int st[] = new int[MAX];
+  int lazy[] = new int[MAX];
+
+  void updateRangeUtil(int ss, int se, int us, int ue, int si, int diff) {
+    if (lazy[si] != 0) {
+      st[si] += (se - ss + 1) * lazy[si];
+      if (ss != se) {
+        lazy[2 * si + 1] += lazy[si];
+        lazy[2 * si + 2] += lazy[si];
+      }
+      lazy[si] = 0;
+    }
+
+    if (ss > se || ss > ue || se < us) return;
+    if (ss >= us && se <= ue) {
+      st[si] += (se - ss + 1) * diff;
+      // If not a leaf node
+      if (ss != se) {
+        lazy[2 * si + 1] += diff;
+        lazy[2 * si + 2] += diff;
+      }
+      return;
+    }
+
+    int mid = ss + (se - ss) / 2;
+    updateRangeUtil(ss, mid, us, ue, 2 * si + 1, diff);
+    updateRangeUtil(mid + 1, se, us, ue, 2 * si + 2, diff);
+
+    st[si] = st[2 * si + 1] + st[2 * si + 2];
+  }
+
+  void updateRange(int n, int us, int ue, int diff) {
+    updateRangeUtil(0, n - 1, us, ue, 0, diff);
+    // updateRangeUtil(ss, se, us, ue, si, diff);
+  }
+
+  int getSumUtil(int ss, int se, int qs, int qe, int si) {
+    if (lazy[si] != 0) {
+      st[si] += (se - ss + 1) * lazy[si];
+      // if not a leaf node
+      if (ss != se) {
+        lazy[2 * si + 1] += lazy[si];
+        lazy[2 * si + 2] += lazy[si];
+      }
+      lazy[si] = 0;
+    }
+    // out of range bounds
+    if (ss > se || ss > qe || se < qs) {
+      return 0;
+    }
+    // in range
+    if (ss >= qs && se <= qe) {
+      return st[si];
+    }
+    // overlaping
+    int mid = ss + (se - ss) / 2;
+    return (
+      getSumUtil(ss, mid, qs, qe, 2 * si + 1) +
+      getSumUtil(mid + 1, se, qs, qe, 2 * si + 2)
+    );
+  }
+}
