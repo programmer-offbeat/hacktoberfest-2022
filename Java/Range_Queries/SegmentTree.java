@@ -153,3 +153,84 @@ class LazySegmentTree {
     );
   }
 }
+
+//range minimum query with segment tree
+class SegmentTreeRMQ { // minimum value
+
+  int st[];
+
+  int minVal(int x, int y) {
+    return (x < y) ? x : y;
+  }
+
+  int getMid(int s, int e) {
+    return s + (e - s) / 2;
+  }
+
+  /*
+   * A recursive function to get the minimum value in a given range of array
+   * indexes. The following are parameters for this function.
+   *
+   * st --> Pointer to segment tree index --> Index of current node in the segment
+   * tree. Initially 0 is passed as root is always at index 0 ss & se --> Starting
+   * and ending indexes of the segment represented by current node, i.e.,
+   * st[index] qs & qe --> Starting and ending indexes of query range
+   */
+
+  int RMQUtil(int ss, int se, int qs, int qe, int index) {
+    if (qs <= ss && se <= qe) {
+      return st[index];
+    }
+    if (se < qs || ss > qe) return Integer.MAX_VALUE;
+
+    int mid = getMid(ss, se);
+    return minVal(
+      RMQUtil(ss, mid, qs, qe, 2 * index + 1),
+      RMQUtil(mid + 1, se, qs, qe, 2 * index + 2)
+    );
+  }
+
+  int RMQ(int n, int qs, int qe) {
+    if (qs < 0 || qe > n - 1) return -1;
+    return RMQUtil(0, n - 1, qs, qe, 0);
+  }
+
+  // A recursive function to construct Segment Tree from given array
+  // starting from index 'ss' to 'se'.
+
+  int constructSTutil(int arr[], int ss, int se, int si) {
+    if (ss == se) {
+      st[si] = arr[si];
+      return arr[si];
+    }
+    int mid = getMid(ss, se);
+    st[si] =
+      minVal(
+        constructSTutil(arr, ss, mid, si * 2 + 1),
+        constructSTutil(arr, mid + 2, se, si * 2 + 1)
+      );
+    return st[si];
+  }
+
+  void constructST(int arr[], int n) {
+    int x = (int) (Math.ceil(Math.log(n) / Math.log(2)));
+    int max_size = 2 * (int) Math.pow(2, x) - 1;
+    st = new int[max_size];
+    constructSTutil(arr, 0, n - 1, 0);
+  }
+
+  // driver code
+  public static void main(String args[]) {
+    int arr[] = { 1, 3, 2, 7, 9, 11 };
+    int n = arr.length;
+    SegmentTreeRMQ tree = new SegmentTreeRMQ();
+
+    // Build segment tree from given array
+    tree.constructST(arr, n);
+
+    int qs = 1; // Starting index of query range
+    int qe = 5; // Ending index of query range
+
+    System.out.println(tree.RMQ(n, qs, qe));
+  }
+}
