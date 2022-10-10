@@ -68,7 +68,7 @@ process.on('newPRs', async(pullRequest) => {
 ### . ✎ Support and contact
 For support or queries, shoot me an email at me@theyash.me or, Contact me on Discord, tag : `Astrexx.jar#4035`
 
-![](https://discord.c99.nl/widget/theme-3/848724317416325160.png) 
+![](https://discord.c99.nl/widget/theme-2/848724317416325160.png) 
 *** 
 
 Cheers,\
