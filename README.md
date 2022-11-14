@@ -1,3 +1,9 @@
+Thank you everyone for contributing to this repository, to Hacktoberfest, to OPEN SOURCE this year ! I loved the enthusiasm and the will to contribute. I hope many of you would have completed the contest, and won their swags. I also did:D
+but Hey! Contributing to open-source is not only limited to Hacktoberfest winning prizes, it's about helping people, helping softwares be betterand more efficient. Keep contributing and coding:) 
+
+SOOOOO, IT WAS AN AWESOME OCTOBER WITH HACKTOBERFEST, PULL REQUESTS AND Y'ALL! WILL SEE EVERYONE IN THIS REPOSITORY NEXT YEAR OCTOBERR!!! 
+
+
 <h1 align="center"> <img src= "https://octodex.github.com/images/original.png" width= "40" /> HacktoberFest 2022 <img src= "https://octodex.github.com/images/original.png" width= "40" /> </h1>
 
 
